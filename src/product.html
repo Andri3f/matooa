@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Product Page"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="product">
+         <!-- ============ breadcrumbs =================== -->
+         <div class="product__breadcrumbs breadcrumbs">
+            <div class="breadcrumbs__container">
+               <nav class="breadcrumbs__body">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Home</a>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Product</a>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Watches</a>
+                     </li>
+                     <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Way Kambas Mini Ebony</span>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- ======================= body-product =================== -->
+            <section class="product__body body-product">
+               <div class="body-product__container">
+                  <div class="body-product__images">
+                     <div class="images-product">
+                        <div class="images-product__slider swiper">
+                           <div class="images-product__wrapper swiper-wrapper">
+                              <div class="images-product__slide swiper-slide">
+                                 <img src="@img/product/images/01.png" alt="Image">
+                              </div>
+                              <div class="images-product__slide swiper-slide">
+                                 <img src="@img/product/images/02.png" alt="Image">
+                              </div>
+                              <div class="images-product__slide swiper-slide">
+                                 <img src="@img/product/images/03.png" alt="Image">
+                              </div>
+                              <div class="images-product__slide swiper-slide">
+                                 <img src="@img/product/images/04.png" alt="Image">
+                              </div>
+                              <div class="images-product__slide swiper-slide">
+                                 <img src="@img/product/images/02.png" alt="Image">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="images-preview">
+                        <div class="images-preview__slider swiper">
+                           <div class="images-preview__wrapper swiper-wrapper">
+                              <div class="images-preview__slide swiper-slide">
+                                 <img src="@img/product/images/preview/01.png" alt="Image">
+                              </div>
+                              <div class="images-preview__slide swiper-slide">
+                                 <img src="@img/product/images/preview/02.png" alt="Image">
+                              </div>
+                              <div class="images-preview__slide swiper-slide">
+                                 <img src="@img/product/images/preview/03.png" alt="Image">
+                              </div>
+                              <div class="images-preview__slide swiper-slide">
+                                 <img src="@img/product/images/preview/04.png" alt="Image">
+                              </div>
+                              <div class="images-preview__slide swiper-slide">
+                                 <img src="@img/product/images/preview/02.png" alt="Image">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <form action="#" class="body-product__content">
+                     <h1 data-da=".body-product__container,1140,first" class="body-product__title">WAY KAMBAS MINI EBONY</h1>
+                     <div class="body-product__price price-product">
+                        <div class="price-product__old">Rp 1.280.000</div>
+                        <div class="price-product__value">Rp 1.024.000</div>
+                     </div>
+                     <div class="body-product__model model-product">
+                        <div class="model-product__label">Choose Model</div>
+                        <div class="model-product__options">
+                           <div class="model-product__option option-product">
+                              <input checked id="o-1" type="radio" name="model" class="option-product__input radio-1" value="1">
+                              <label for="o-1" class="option-product__label">
+                                 <img src="@img/product/models/01.png" alt="Model #1">
+                              </label>
+                           </div>
+                           <div class="model-product__option option-product">
+                              <input id="o-2" type="radio" name="model" class="option-product__input radio-2" value="2">
+                              <label for="o-2" class="option-product__label">
+                                 <img src="@img/product/models/02.png" alt="Model #2">
+                              </label>
+                           </div>
+                        </div>
+                        <div class="rating rating_set">
+                           <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                 <input type="radio" class="rating__item" value="1" name="rating">
+                                 <input type="radio" class="rating__item" value="2" name="rating">
+                                 <input type="radio" class="rating__item" value="3" name="rating">
+                                 <input type="radio" class="rating__item" value="4" name="rating">
+                                 <input type="radio" class="rating__item" value="5" name="rating">
+                              </div>
+                           </div>
+                           <div class="rating__value">4.5</div>
+                        </div>
+
+                     </div>
+
+
+                     <div class="body-product__actions">
+                        <div data-quantity class="body-product__quantity quantity">
+                           <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                           <div class="quantity__input">
+                              <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                           </div>
+                           <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                        </div>
+                        <button type="button" class="body-product__add-to-cart button button_cart"><span class="_icon-cart-plus">Add to cart</span></button>
+                        <button type="button" class="body-product__cicil border-button border-button_cicil">
+                           <img src="@img/icons/cicil.svg" alt="cicil">
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </section>
+            </section>
+            <section class="product__info info-product">
+               <div class="info-product__container">
+                  <div data-tabs class="info-product__tabs">
+                     <nav data-tabs-titles class="info-product__navigation">
+                        <button type="button" class="info-product__title _tab-active">Detail</button>
+                        <button type="button" class="info-product__title">Warranty</button>
+                        <button type="button" class="info-product__title">Custom Engrave</button>
+                        <button type="button" class="info-product__title">How to Adjust</button>
+                        <button type="button" class="info-product__title">How to Care</button>
+                        <button type="button" class="info-product__title">Gallery</button>
+                     </nav>
+                     <div data-tabs-body class="info-product__content">
+                        <div class="info-product__body">
+                           <h4 class="info-product__subtitle">Material</h4>
+                           <div class="info-product__text">
+                              <p>MATOA Way Kambas - Sumatran Rhino comes with a material form of Makassar Ebony (Diospyros celebica). This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin. Sumatran Rhino has unique skin fold, the skin is fairly thin about 10-16mm, and is soft and pliable.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Case</h4>
+                           <div class="info-product__text ">
+                              <p>The case on this timepiece is made with Height 12.5mm, Width 36mm, Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat glass to increase the enhanced durability on timepieces as scratch resistant and anti fingerprint. This timepiece is also equipped with Hand Polish Brass Spacer for a longer usage periods.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Movement</h4>
+                           <div class="info-product__text">
+                              <p>For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Dial</h4>
+                           <div class="info-product__text">
+                              <p>In the dial, there are double layer of Makassar Ebony Veneer with 3, 9 & 12 o'clock laser cut brass plate index.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Hand</h4>
+                           <div class="info-product__text">
+                              <p>The hour, minute & small second hands on MATOA Way Kambas - Sumatran Rhino is outfitted with skeleton hand and brush finished with Gold Matte color. This new design aims at adding a value for this special edition.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Important to Note</h4>
+                           <div class="info-product__text">
+                              <p>Wood color on watches is produced from a combination of mature and fresh wood but should not be viewed as a defect. It is a very natural process of wood aging.</p>
+                           </div>
+                           <div class="info-product__image">
+                              <img src="@img/info/size.jpg" alt="image">
+                           </div>
+                        </div>
+                        <div class="info-product__body">
+                           <h4 class="info-product__subtitle">Important to Note</h4>
+                           <div class="info-product__text">
+                              <p>Wood color on watches is produced from a combination of mature and fresh wood but should not be viewed as a defect. It is a very natural process of wood aging.</p>
+                           </div>
+                           <div class="info-product__image">
+                              <img src="@img/info/size.jpg" alt="image">
+                           </div>
+                        </div>
+                        <div class="info-product__body">
+                           <h4 class="info-product__subtitle">Important to Note</h4>
+                           <div class="info-product__text ">
+                              <p>The case on this timepiece is made with Height 12.5mm, Width 36mm, Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat glass to increase the enhanced durability on timepieces as scratch resistant and anti fingerprint. This timepiece is also equipped with Hand Polish Brass Spacer for a longer usage periods.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Movement</h4>
+                           <div class="info-product__text">
+                              <p>For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
+                           </div>
+                        </div>
+                        <div class="info-product__body">
+                           <h4 class="info-product__subtitle">Important to Note</h4>
+
+                           <div class="info-product__text ">
+                              <p>The case on this timepiece is made with Height 12.5mm, Width 36mm, Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat glass to increase the enhanced durability on timepieces as scratch resistant and anti fingerprint. This timepiece is also equipped with Hand Polish Brass Spacer for a longer usage periods.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Movement</h4>
+                           <div class="info-product__text">
+                              <p>For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
+                           </div>
+                           <div class="info-product__text ">
+                              <p>The case on this timepiece is made with Height 12.5mm, Width 36mm, Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat glass to increase the enhanced durability on timepieces as scratch resistant and anti fingerprint. This timepiece is also equipped with Hand Polish Brass Spacer for a longer usage periods.</p>
+                           </div>
+                           <h4 class="info-product__subtitle">Movement</h4>
+                           <div class="info-product__text">
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium sit placeat sed quod. Animi veniam doloremque repellendus in iure aut alias beatae dolore accusantium, doloribus enim officia nobis eius quisquam.</p>
+                           </div>
+                        </div>
+                        <div class="info-product__body">
+
+                           <h4 class="info-product__subtitle">Lorem, ipsum dolor.</h4>
+                           <div class="info-product__text">
+                              <p>For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
+                           </div>
+                        </div>
+                        <div class="info-product__body">
+                           <h4 class="info-product__subtitle">Lorem ipsum dolor sit amet consectetur.</h4>
+                           <div class="info-product__text">
+                              <p>For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
+                           </div>
+                           <div class="info-product__text">
+                              <p>For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum magni exercitationem laudantium consequatur ab error aliquam eaque at rerum. Blanditiis vero qui nihil fugiat dolores eius ut consectetur accusamus.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+            </section>
+            <section data-watch data-watch-once data-watch-threshold="0.3" class="product__relate relate-product">
+               <div class="relate-product__container">
+                  <h3 class="relate-product__title title">Relate Products</h3>
+                  <div class="relate-product__cards cards-relate">
+                     <article class="cards-relate__card">
+                        <div class="cards-relate__marks">
+                           <div class="cards-relate__mark cards-relate__mark_orange">20% OFF</div>
+                           <div class="cards-relate__mark cards-relate__mark_green">NEW</div>
+                        </div>
+                        <a href="#" class="cards-relate__image-ibg"><img data-src="@img/relate/01.jpg" alt="clock"></a>
+                        <a href="#" class="cards-relate__subtitle subtitle">Singo Maple</a>
+                        <div class="cards-relate__old-price old-price">Rp 1.500.000</div>
+                        <div class="cards-relate__price subtitle">Rp 1.264.000</div>
+                     </article>
+                     <article class="cards-relate__card">
+                        <div class="cards-relate__marks">
+                           <div class="cards-relate__mark cards-relate__mark_green">NEW</div>
+                        </div>
+                        <a href="#" class="cards-relate__image-ibg"><img data-src="@img/relate/02.jpg" alt="clock"></a>
+                        <a href="#" class="cards-relate__subtitle subtitle">Sikka (Ebony & Maple)</a>
+                        <div class="cards-relate__price subtitle">Rp 1.264.000</div>
+                     </article>
+                     <article class="cards-relate__card">
+                        <a href="#" class="cards-relate__image-ibg"><img data-src="@img/relate/03.jpg" alt="clock"></a>
+                        <a href="#" class="cards-relate__subtitle subtitle">Sunda</a>
+                        <div class="cards-relate__price subtitle">Rp 1.170.000</div>
+                     </article>
+                     <article class="cards-relate__card">
+                        <div class="cards-relate__marks">
+                           <div class="cards-relate__mark cards-relate__mark_orange">20% OFF</div>
+                        </div>
+                        <a href="#" class="cards-relate__image-ibg"><img data-src="@img/relate/01.jpg" alt="clock"></a>
+                        <a href="#" class="cards-relate__subtitle subtitle">Singo Maple</a>
+                        <div class="cards-relate__old-price old-price">Rp 1.280.000</div>
+                        <div class="cards-relate__price subtitle">Rp 960.000</div>
+                     </article>
+                  </div>
+               </div>
+            </section>
+            <!--============== clients ================-->
+         </div>
+         <div class="product__clients clients">
+            <div class="clients__container">
+               <div class="clients__item">
+                  <img src="@img/clients/01.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/02.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/03.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/04.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/05.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/06.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/07.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/08.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/09.png" alt="">
+               </div>
+               <div class="clients__item">
+                  <img src="@img/clients/10.png" alt="">
+               </div>
+            </div>
+         </div>
+
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>
